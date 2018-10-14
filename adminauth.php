@@ -1,5 +1,10 @@
-
 <?php
+require_once('../function.php');   
+connectdb();
+session_start();
+
+/* Edit "function.php" to your database connection file */
+
  $user = $_SESSION['username'];
 
  if($user!="admin"){
